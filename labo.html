@@ -20,13 +20,48 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body style="padding: 2rem">
-    <div class="feature">
-      <ion-icon class="icon icon--feature" name="infinite-outline"></ion-icon>
-      <p class="feature__title">Never cook again!</p>
-      <p>
-        Our subscriptions cover 365 days per year, even including major
-        holidays.
-      </p>
+    <div class="plan plan--complete plan--best-value">
+      <header class="plan__header">
+        <p class="plan__name">Starter</p>
+        <p class="plan__price"><span>$</span> 399</p>
+        <p class="plan__text text-small">
+          per month. That's just $13 per meal!
+        </p>
+      </header>
+      <div class="plan__body">
+        <ul class="list list--icon">
+          <li class="list__item">
+            <ion-icon
+              class="icon icon--primary"
+              name="checkmark-outline"
+            ></ion-icon>
+            1 meal per day
+          </li>
+          <li class="list__item">
+            <ion-icon
+              class="icon icon--primary"
+              name="checkmark-outline"
+            ></ion-icon>
+            Order from 11am to 9pm
+          </li>
+          <li class="list__item">
+            <ion-icon
+              class="icon icon--primary"
+              name="checkmark-outline"
+            ></ion-icon>
+            Delivery is free
+          </li>
+          <li class="list__item">
+            <ion-icon
+              class="icon icon--primary"
+              name="close-outline"
+            ></ion-icon>
+          </li>
+        </ul>
+      </div>
+      <footer class="plan__footer">
+        <a class="btn btn--primary">Start eating well</a>
+      </footer>
     </div>
   </body>
 </html>

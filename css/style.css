@@ -276,11 +276,33 @@ a {
 
 /* plans */
 .plan {
-    border: 2px solid var(--color-secondary);
-    border-radius: 8px;
     overflow: hidden;
     text-align: center;
     color: var(--color-heading);
+    position: relative;
+    border-radius: 9px;
+}
+
+.plan--starter {
+    border: 2px solid var(--color-secondary);
+    border-radius: 8px;
+}
+
+.plan--complete {
+    background-color: var(--color-secondary);
+}
+
+.plan--best-value::after {
+    position: absolute;
+    content: "BEST VALUE";
+    top: 6%;
+    right: -52%;
+    font-weight: 700;
+    width: 40rem;
+    padding: 0 2rem;
+    background-color: var(--color-paleo);
+    transform: rotate(45deg);
+    font-size: 1.2rem;
 }
 
 .plan__name {
