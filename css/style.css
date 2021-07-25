@@ -356,3 +356,26 @@ a {
     font-weight: 600;
     color: var(--lighter-gray);
 }
+
+/* delivred */
+.delivred {
+    display: flex;
+    justify-content: space-between;
+}
+
+.delivred__customers {
+    display: flex;
+}
+
+.delivred__customers img {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    margin-left: -1rem;
+    border: 2px solid #fff;
+}
+
+.delivered__text strong {
+    color: var(--darker-primary);
+    font-weight: 600;
+}
