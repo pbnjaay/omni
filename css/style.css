@@ -1,13 +1,16 @@
 :root {
+    --btn-transition: transition: all 250ms ease;
     --color-heading: #333;
+    --color-paleo: #ffd43b;
     --color-primary: #e67e22;;
     --color-secondary: #fdf2e9;
     --color-tertiary: #45260a;
     --color-text: #555;
+    --color-vegan: #94d82d;
+    --color-vegetarian: #51cf66;
     --darker-primary: #cf711f;
     --lighter-primary: rgb(230, 125, 34 ,50%);
     --lighter-text: #767676;
-    --btn-transition: transition: all 250ms ease;
 }
 
 /* Typography */
@@ -33,8 +36,8 @@ body {
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
     line-height: 1.75;
-    color: #333;
-    font-size: 1.5rem;
+    color: var(--color-text);
+    font-size: 1.8rem;
 }
 
 p {
@@ -126,4 +129,21 @@ small,
     .btn {
         padding: 1.6rem 2.4rem; 
     }
+}
+
+.link-arrow {
+    text-decoration: none;
+    color: var(--color-primary);
+    position: relative;
+    border-bottom: 1px solid var(--color-primary);
+    transition: var(--btn-transition);
+}
+
+.link-arrow:hover {
+    color: var(--darker-primary);
+    border: none;
+}
+
+.link-arrow: {
+    height: 0;
 }
