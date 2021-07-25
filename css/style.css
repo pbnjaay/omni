@@ -1,4 +1,5 @@
 :root {
+    --color-gray: #6f6f6f;
     --color-heading: #333;
     --color-paleo: #ffd43b;
     --color-primary: #e67e22;;
@@ -8,9 +9,9 @@
     --color-vegan: #94d82d;
     --color-vegetarian: #51cf66;
     --darker-primary: #cf711f;
+    --lighter-gray: #ddd;
     --lighter-primary: rgb(230, 125, 34 ,50%);
     --lighter-text: #767676;
-    --color-gray: #6f6f6f;
     --transition-btn: transition: all 250ms ease;
 }
 
@@ -56,6 +57,7 @@ h5 {
     font-weight: 700;
     line-height: 1.3;
     margin: 3rem 0 1.38rem;
+    margin-top: 0;
 }
 
 h1 {
@@ -86,6 +88,9 @@ small,
 }
 
 @media screen and (min-width: 1024px) {
+    body {
+        font-size: 1.8rem;
+    }
     small,
     .text-small {
         font-size: 1.5rem;
@@ -276,11 +281,10 @@ a {
 
 /* plans */
 .plan {
-    overflow: hidden;
     text-align: center;
     color: var(--color-heading);
-    position: relative;
     border-radius: 9px;
+    width: 75%;
 }
 
 .plan--starter {
@@ -292,14 +296,19 @@ a {
     background-color: var(--color-secondary);
 }
 
-.plan--best-value::after {
+.plan--best-value .plan__header {
+    position: relative;
+    overflow: hidden;
+}
+
+.plan--best-value .plan__header::after {
     position: absolute;
     content: "BEST VALUE";
-    top: 6%;
-    right: -52%;
+    top: 20%;
+    text-align: center;
+    right: 0%;
     font-weight: 700;
     width: 40rem;
-    padding: 0 2rem;
     background-color: var(--color-paleo);
     transform: rotate(45deg);
     font-size: 1.2rem;
@@ -317,6 +326,7 @@ a {
 
 .plan__header {
     padding: 2.8rem;
+    /* width: 100%; */
 }
 
 .plan__body {
@@ -338,4 +348,11 @@ a {
 .feature__title {
     font-weight: 700;
     font-size: 1.92rem;
+}
+
+/* step */
+.step__number {
+    font-size: 6rem;
+    font-weight: 600;
+    color: var(--lighter-gray);
 }
