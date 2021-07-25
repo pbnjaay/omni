@@ -40,6 +40,7 @@ body {
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.75;
+    height: 100vh;
 }
 
 p {
@@ -79,8 +80,16 @@ h5 {
 }
 
 small,
-.text_small {
-    font-size: 1.5rem;
+.text-small {
+    font-size: 1.3rem;
+    color: var(--color-gray);
+}
+
+@media screen and (min-width: 1024px) {
+    small,
+    .text-small {
+        font-size: 1.5rem;
+    }
 }
 
 strong {
@@ -92,9 +101,9 @@ strong {
 .btn {
     border-radius: 8px;
     border: none;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 700;
-    padding: 2.4rem 1.6rem;
+    padding: 1.8rem 1.4rem;
 }
 
 .btn--primary {
@@ -133,7 +142,7 @@ strong {
 
 @media screen and (min-width: 1024px) {
     .btn {
-        padding: 1.6rem 2.4rem; 
+        padding: 1.6rem 2.6rem; 
     }
 }
 
@@ -181,10 +190,10 @@ a {
 }
 
 .icon--feature {
-    border-radius: 50%;
-    padding: 1.4rem;
     background-color: var(--color-secondary);
+    border-radius: 50%;
     color: var(--color-primary);
+    padding: 1.4rem;
 }
 
 .icon--primary {
@@ -207,18 +216,18 @@ a {
 }
 
 .list--icon .list__item {
-    display: flex;
     align-items: center;
+    display: flex;
     gap: 1.6rem;
     margin-bottom: 1rem;
 }
 
 /* meal */
 .meal {
-    border-radius: 8px;
     background-color: #fff;
-    overflow: hidden;
+    border-radius: 8px;
     box-shadow: 0 2.4rem 4.8rem rgb(0 0 0 / 8%);
+    overflow: hidden;
     transition: all 450ms ease;
 }
 
@@ -256,11 +265,49 @@ a {
 }
 
 .testimonial_img {
-    width: 6rem;
-    height: 6rem;
     border-radius: 50%;
+    height: 6rem;
+    width: 6rem;
 }
 
 .testimonial_name {
     color: var(--color-gray);
+}
+
+/* plans */
+.plan {
+    border: 2px solid var(--color-secondary);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    color: var(--color-heading);
+}
+
+.plan__name {
+    font-weight: 700;
+    color: var(--darker-primary);
+    text-transform: uppercase;
+}
+.plan__price {
+    font-weight: 700;
+    font-size: 5rem;
+}
+
+.plan__header {
+    padding: 2.8rem;
+}
+
+.plan__body {
+    padding: 0 4rem;
+}
+.plan__price {
+    margin: 0;
+}
+
+.plan__price span {
+    font-size: 2.5rem;
+}
+
+.plan__footer {
+    padding: 4.4rem 0;
 }
