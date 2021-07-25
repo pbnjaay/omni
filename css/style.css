@@ -10,6 +10,7 @@
     --darker-primary: #cf711f;
     --lighter-primary: rgb(230, 125, 34 ,50%);
     --lighter-text: #767676;
+    --color-gray: #6f6f6f;
     --transition-btn: transition: all 250ms ease;
 }
 
@@ -36,7 +37,7 @@ html {
 body {
     color: var(--color-text);
     font-family: 'Rubik', sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.75;
 }
@@ -79,7 +80,7 @@ h5 {
 
 small,
 .text_small {
-    font-size: 0.75rem;
+    font-size: 1.5rem;
 }
 
 strong {
@@ -243,6 +244,23 @@ a {
     font-weight: 700;
 }
 
-/* diet */
-.diet {
+.diet {}
+
+/* testimonial */
+
+.testimonial {
+}
+
+.testimonial__text {
+    margin-bottom: 0.4rem;
+}
+
+.testimonial_img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+}
+
+.testimonial_name {
+    color: var(--color-gray);
 }
