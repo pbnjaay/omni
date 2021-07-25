@@ -401,3 +401,14 @@ input[type="text"]:focus,
 input[type="email"]:focus{
     outline: none;
 }
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    columns: var(--color-tertiary);
+}
+
+.input-group label {
+    font-weight: 500;
+}
