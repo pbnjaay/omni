@@ -1,5 +1,4 @@
 :root {
-    --btn-transition: transition: all 250ms ease;
     --color-heading: #333;
     --color-paleo: #ffd43b;
     --color-primary: #e67e22;;
@@ -11,10 +10,10 @@
     --darker-primary: #cf711f;
     --lighter-primary: rgb(230, 125, 34 ,50%);
     --lighter-text: #767676;
+    --transition-btn: transition: all 250ms ease;
 }
 
-/* Typography */
-
+/* Basics */
 *,
 *::after,
 *::before {
@@ -32,12 +31,14 @@ html {
     font-size: 62.5%;
 }
 
+/* Typography */
+
 body {
+    color: var(--color-text);
     font-family: 'Rubik', sans-serif;
+    font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.75;
-    color: var(--color-text);
-    font-size: 1.8rem;
 }
 
 p {
@@ -49,15 +50,15 @@ h2,
 h3,
 h4,
 h5 {
-    margin: 3rem 0 1.38rem;
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
     line-height: 1.3;
+    margin: 3rem 0 1.38rem;
 }
 
 h1 {
-    margin-top: 0;
     font-size: 4.209rem;
+    margin-top: 0;
 }
 
 h2 {
@@ -84,17 +85,17 @@ small,
 /* button */
 
 .btn {
-    padding: 2.4rem 1.6rem;
     border-radius: 8px;
     border: none;
-    font-weight: 700;
     font-size: 2rem;
+    font-weight: 700;
+    padding: 2.4rem 1.6rem;
 }
 
 .btn--primary {
     background-color: var(--color-primary);
     color: #fff;
-    transition: var(--btn-transition);
+    transition: var(--transition-btn);
 }
 
 .btn--primary:hover {
@@ -105,18 +106,18 @@ small,
 .btn--tertiary {
     background-color: var(--color-tertiary);
     color: var(--color-secondary);
-    transition: var(--btn-transition);
+    transition: var(--transition-btn);
 }
 
 .btn--tertiary:hover {
     background-color: var(--color-secondary);
     color: var(--color-text);
-    transition: var(--btn-transition); 
+    transition: var(--transition-btn); 
 }
 
 .btn--outline {
     background-color: #fff;
-    transition: var(--btn-transition);
+    transition: var(--transition-btn);
     color: var(--color-text);
 }
 
@@ -131,27 +132,30 @@ small,
     }
 }
 
-/* link arrow */
-.link-arrow {
+/* link */
+a {
     text-decoration: none;
+}
+
+.link-arrow {
+    border-bottom: 1px solid var(--color-primary);
     color: var(--color-primary);
     position: relative;
-    border-bottom: 1px solid var(--color-primary);
-    transition: var(--btn-transition);
+    transition: var(--transition-btn);
 }
 
 .link-arrow:hover {
-    color: var(--darker-primary);
     border: none;
+    color: var(--darker-primary);
 }
 
 /* badges */
 .badge {
-    padding: 2px 7px;
     border-radius: 40rem;
-    text-transform: uppercase;
     font-size: 1.2rem;
     font-weight: bold;
+    padding: 2px 7px;
+    text-transform: uppercase;
 }
 
 .badge--vegan {
@@ -164,4 +168,24 @@ small,
 
 .badge--paleo {
     background-color: var(--color-paleo);
+}
+
+/* icons */
+.icon {
+    font-size: 2.4rem;
+}
+
+.icon--feature {
+    border-radius: 50%;
+    padding: 1.4rem;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+}
+
+.icon--meal {
+    color: var(--color-primary);
+}
+
+.icon--social {
+    color: var(--lighter-text);
 }
