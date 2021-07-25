@@ -182,10 +182,27 @@ a {
     color: var(--color-primary);
 }
 
-.icon--meal {
+.icon--primary {
     color: var(--color-primary);
 }
 
-.icon--social {
+.icon--lighter {
     color: var(--lighter-text);
+}
+
+/* list */
+.list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.list--inline .list__item {
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+.list--icon .list__item {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
 }
