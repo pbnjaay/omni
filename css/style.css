@@ -218,6 +218,11 @@ a {
     background-color: #fff;
     overflow: hidden;
     box-shadow: 0 2.4rem 4.8rem rgb(0 0 0 / 8%);
+    transition: all 450ms ease;
+}
+
+.meal:hover {
+    transform: translateY(-5px);
 }
 
 .meal__img {
@@ -228,6 +233,16 @@ a {
     padding: 1rem 2.4rem;
 }
 
+@media screen and (min-width: 1024px) {
+    .meal__content {
+        padding: 1.5rem 4.3rem;
+    }
+}
+
 .meal__name {
     font-weight: 700;
+}
+
+/* diet */
+.diet {
 }
