@@ -20,24 +20,37 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body style="padding: 2rem">
-    <ul class="list list--icon">
-      <li class="list__item">
-        <ion-icon class="icon icon--primary" name="checkmark-outline"></ion-icon
-        >item 1
-      </li>
-      <li class="list__item">
-        <ion-icon class="icon icon--primary" name="checkmark-outline"></ion-icon
-        >item 2
-      </li>
-      <li class="list__item">
-        <ion-icon class="icon icon--primary" name="checkmark-outline"></ion-icon
-        >item 3
-      </li>
-    </ul>
-    <ul class="list list--inline">
-      <li class="list__item">item 1</li>
-      <li class="list__item">item 2</li>
-      <li class="list__item">item 3</li>
-    </ul>
+    <div class="meal">
+      <img
+        class="meal__img"
+        src="/img/meals/meal-1.jpg"
+        alt="Japanese Gyozas"
+      />
+      <div class="meal__content">
+        <span class="badge badge--vegetarian">vegetarian</span>
+        <p class="meal__name">Japanese Gyozas</p>
+        <ul class="list list--icon">
+          <li class="list__item">
+            <ion-icon
+              class="icon icon--primary"
+              name="flame-outline"
+            ></ion-icon>
+            <span><strong>650</strong> calories</span>
+          </li>
+          <li class="list__item">
+            <ion-icon
+              class="icon icon--primary"
+              name="restaurant-outline"
+            ></ion-icon>
+            <span>NutriScore &reg; <strong>74</strong></span>
+          </li>
+          <li class="list__item">
+            <ion-icon class="icon icon--primary" name="star-outline"></ion-icon>
+            <span><strong>4.9 </strong>rating(537)</span>
+          </li>
+          <li class="list__item"></li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
