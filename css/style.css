@@ -311,3 +311,9 @@ a {
 .plan__footer {
     padding: 4.4rem 0;
 }
+
+/* feature */
+.feature__title {
+    font-weight: 700;
+    font-size: 1.92rem;
+}
