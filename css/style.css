@@ -269,13 +269,7 @@ a {
     margin-bottom: 0.4rem;
 }
 
-.testimonial_img {
-    border-radius: 50%;
-    height: 6rem;
-    width: 6rem;
-}
-
-.testimonial_name {
+.testimonial__name {
     color: var(--color-gray);
 }
 
@@ -368,9 +362,6 @@ a {
 }
 
 .delivred__customers img {
-    height: 4rem;
-    width: 4rem;
-    border-radius: 50%;
     margin-left: -1rem;
     border: 2px solid #fff;
 }
@@ -378,4 +369,10 @@ a {
 .delivered__text strong {
     color: var(--darker-primary);
     font-weight: 600;
+}
+
+.img-profile {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
 }
