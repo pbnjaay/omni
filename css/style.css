@@ -198,11 +198,12 @@ a {
 
 .list--inline .list__item {
     display: inline-block;
-    margin-right: 2rem;
+    margin-right: 3rem;
 }
 
 .list--icon .list__item {
     display: flex;
     align-items: center;
     gap: 1.6rem;
+    margin-bottom: 1rem;
 }
