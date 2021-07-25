@@ -131,6 +131,7 @@ small,
     }
 }
 
+/* link arrow */
 .link-arrow {
     text-decoration: none;
     color: var(--color-primary);
@@ -144,6 +145,23 @@ small,
     border: none;
 }
 
-.link-arrow: {
-    height: 0;
+/* badges */
+.badge {
+    padding: 2px 7px;
+    border-radius: 40rem;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.badge--vegan {
+    background-color: var(--color-vegan);
+}
+
+.badge--vegetarian {
+    background-color: var(--color-vegetarian);
+}
+
+.badge--paleo {
+    background-color: var(--color-paleo);
 }
