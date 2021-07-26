@@ -49,6 +49,14 @@ html {
     margin-right: 1.6rem;
 }
 
+.mb {
+    margin-bottom: 5rem;
+}
+
+.align-center {
+    text-align: center;
+}
+
 /* Typography */
 
 body {
@@ -66,9 +74,7 @@ p {
 
 h1,
 h2,
-h3,
-h4,
-h5 {
+h3 {
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
     line-height: 1.3;
@@ -84,7 +90,7 @@ h1 {
 }
 
 h2 {
-    font-size: 3.157rem;
+    font-size: 2.5rem;
 }
 
 .heading-2 {
@@ -95,16 +101,16 @@ h2 {
     text-align: center;
 }
 
+.sub-heading {
+    color: var(--darker-primary);
+    font-weight: 500;
+    font-size: 1.6rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
 h3 {
-    font-size: 2.369rem;
-}
-
-h4 {
-    font-size: 1.777rem;
-}
-
-h5 {
-    font-size: 1.333rem;
+    font-size: 1.92rem;
 }
 
 small,
@@ -124,9 +130,7 @@ small,
 
     h1,
     h2,
-    h3,
-    h4,
-    h5 {
+    h3{
         line-height: 4.5rem;
     }
 
@@ -150,15 +154,6 @@ small,
     h3 {
         font-size: 2.369rem;
     }
-
-    h4 {
-        font-size: 1.777rem;
-    }
-
-    h5 {
-        font-size: 1.333rem;
-    }
-
 }
 
 strong {
@@ -323,7 +318,9 @@ a {
 }
 
 /* diet */
-.diet {}
+.diet {
+    justify-self: center;
+}
 
 /* testimonial */
 
@@ -411,9 +408,46 @@ a {
 
 /* step */
 .step__number {
-    font-size: 6rem;
+    font-size: 7.7rem;
     font-weight: 600;
     color: var(--lighter-gray);
+}
+
+.step__img {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.step__img::after, .step__img::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    border-radius: 50%;
+}
+
+.step__img::after {
+    background-color: #fae5d3;
+    width: 45%;
+    padding-top: 45%;
+    z-index: 1;
+}
+
+.step__img::before {
+    background-color: var(--color-secondary);
+    width: 60%;
+    padding-top: 60%;
+}
+
+.step__img img{
+    width: 35%;
+    z-index: 2;
+}
+
+@media screen and (min-width: 1024px) {
 }
 
 /* delivred */
@@ -502,13 +536,25 @@ input[type="email"]:focus{
 
 .grid {
     display: grid;
+    gap: 9.6rem;
+}
+
+.grid-center-v {
+    align-items: center;
 }
 
 @media screen and (min-width: 1024px) {
     .grid--1x2 {
+        grid-template-areas: "left right";
         grid-template-columns: repeat(2, 50fr);
-        align-items: center;
-        gap: 9.8rem;
+    }
+
+    .grid--1x3 {
+        grid-template-columns: repeat(3, 50fr);
+    }
+
+    .grid-right {
+        grid-area: right;
     }
 }
 
@@ -522,9 +568,20 @@ input[type="email"]:focus{
     padding: 4rem 2.5rem;
 }
 
+.section-step {
+    padding: 4rem 2.5rem;
+}
+
+.section-meal {
+    padding: 4rem 2.5rem;
+}
+
 @media screen and (min-width: 768px) {
     .section-hero {
         padding: 2.4rem 8rem 6.4rem 8rem;
+    }
+    .section-step {
+            padding: 2.4rem 8rem 6.4rem 8rem;
     }
 }
 
