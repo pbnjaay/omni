@@ -65,6 +65,7 @@ h5 {
     line-height: 1.3;
     margin: 3rem 0 1.38rem;
     margin-top: 0;
+    color: var(--color-heading);
 }
 
 h1 {
@@ -364,24 +365,25 @@ a {
     display: flex;
     justify-content: space-between;
     gap: 1.5rem;
+    margin-top: 8rem;
 }
 
 .delivred__customers {
     display: flex;
 }
 
-.delivred__customers img {
+.delivred__customers img:not(:first-of-type) {
     margin-left: -1rem;
     border: 2px solid #fff;
 }
 
 .delivered__text {
-    text-align: center;
+    font-weight: 600;
+    line-height: 1;
 }
 
 .delivered__text strong {
     color: var(--darker-primary);
-    font-weight: 600;
 }
 
 /* inputs */
@@ -411,4 +413,56 @@ input[type="email"]:focus{
 
 .input-group label {
     font-weight: 500;
+}
+
+/* hero */
+.hero {
+    text-align: center;
+    padding: 0 2.5rem;
+}
+
+.hero__text {
+    margin-bottom: 3rem;
+}
+
+.mr {
+    margin-right: 1.6rem;
+}
+
+.hero__imgbox {
+    margin-top: 5rem;
+}
+
+.hero__img {
+    width: 80%;
+}
+
+/* grid */
+
+.grid {
+    display: grid;
+}
+
+@media screen and (min-width: 1024px) {
+    .grid--1x2 {
+        grid-template-columns: repeat(2, 50fr);
+        align-items: center;
+        gap: 9.6rem;
+    }
+
+    .hero {
+        text-align: left;
+        padding: 0 1rem 0 9rem;
+        max-width: 120rem;
+    }
+
+    .hero__img, .hero__imgbox{
+        width: 100%;
+    }
+}
+
+/* section */
+.hero-section {
+    padding: 2.4rem 0 6.4rem 0;
+    background-color: var(--color-secondary);
 }
