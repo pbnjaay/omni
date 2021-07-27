@@ -447,9 +447,6 @@ a {
     z-index: 2;
 }
 
-@media screen and (min-width: 1024px) {
-}
-
 /* delivred */
 .delivred {
     display: flex;
@@ -536,7 +533,6 @@ input[type="email"]:focus{
 
 .grid {
     display: grid;
-    gap: 9.6rem;
 }
 
 .grid-center-v {
@@ -547,14 +543,29 @@ input[type="email"]:focus{
     .grid--1x2 {
         grid-template-areas: "left right";
         grid-template-columns: repeat(2, 50fr);
+        align-items: center;
     }
 
     .grid--1x3 {
         grid-template-columns: repeat(3, 50fr);
     }
 
+    .grid--2x2 {
+        grid-template-columns: repeat(2, 50fr);
+        grid-template-rows: repeat(2, 50fr);
+    }
+
+    .grid--2x6 {
+        grid-template-columns: repeat(2, 50fr);
+        grid-template-rows: repeat(6, 50fr);
+    }
+
     .grid-right {
         grid-area: right;
+    }
+
+    .grid--2x6 img {
+        width: 100%;
     }
 }
 
@@ -581,7 +592,7 @@ input[type="email"]:focus{
         padding: 2.4rem 8rem 6.4rem 8rem;
     }
     .section-step {
-            padding: 2.4rem 8rem 6.4rem 8rem;
+        padding: 2.4rem 8rem 6.4rem 8rem;
     }
 }
 
