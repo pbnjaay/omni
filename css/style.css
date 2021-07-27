@@ -90,7 +90,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
 }
 
 .heading-2 {
@@ -111,6 +111,8 @@ h2 {
 
 h3 {
     font-size: 1.92rem;
+    margin-bottom: 1.4rem;
+    line-height: 1.4;
 }
 
 small,
@@ -140,7 +142,8 @@ small,
     }
 
     h2 {
-        font-size: 3.157rem;
+        font-size: 4.4rem;
+        margin-bottom: 8.64rem;
     }
 
     .heading-2 {
@@ -299,9 +302,9 @@ a {
     transform: translateY(-5px);
 }
 
-.meal__img {
+.meal__img img {
     width: 100%;
-    height: 100%;
+    height: 50%;
     object-fit: cover;
 }
 
@@ -353,6 +356,9 @@ a {
     text-align: center;
     color: var(--color-heading);
     border-radius: 9px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
 }
 
 .plan--starter {
@@ -364,17 +370,12 @@ a {
     background-color: var(--color-secondary);
 }
 
-.plan--best-value .plan__header {
-    position: relative;
-    overflow: hidden;
-}
-
 .plan--best-value .plan__header::after {
     position: absolute;
     content: "BEST VALUE";
-    top: 20%;
-    text-align: center;
-    right: 0%;
+    top: 6%;
+    right: -48%;
+    padding: 0.4rem;
     font-weight: 700;
     width: 40rem;
     background-color: var(--color-paleo);
@@ -412,13 +413,37 @@ a {
     padding: 4.4rem 0;
 }
 
+aside {
+    text-align: center;
+    margin: 4rem 0 8rem 0;
+}
+
+aside p {
+    font-size: 1.28rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .plan {
+        width: 75%;
+    }
+
+    aside p {
+        font-size: 1.6rem;
+    }
+}
+
 /* feature */
 .feature__title {
     font-weight: 700;
     font-size: 1.92rem;
+    color: var(--color-heading);
 }
 
 /* step */
+
+.step {
+    margin-bottom: 4rem;
+}
 .step__number {
     font-size: 7.7rem;
     font-weight: 600;
@@ -551,6 +576,44 @@ input[type="email"]:focus{
     align-items: center;
 }
 
+.gap-1x2 {
+    gap: 0.8rem;
+}
+
+.gap-1x2-2 {
+    gap: 9rem;
+}
+
+.gap-1x2-3 {
+    gap: 4rem;
+}
+
+.gap-1x3 {
+    gap: 4rem;
+}
+
+.gap-1x4 {
+    gap: 4rem;
+}
+
+.grid--2x2 {
+    gap: 3.5rem;
+}
+
+.grid--2x6 {
+    gap: 1.8rem;
+}
+
+.grid--4x3 {
+    grid-template-columns: repeat(4, 50fr);
+    grid-template-rows: repeat(3, 50fr);
+    gap: 1rem;
+}
+
+.grid-self-center-end {
+    justify-self: end;
+}
+
 @media screen and (min-width: 1024px) {
     .grid--1x2 {
         grid-template-areas: "left right";
@@ -570,6 +633,30 @@ input[type="email"]:focus{
         grid-template-rows: repeat(2, 50fr);
     }
 
+    .gap-1x2 {
+        gap: 9.6rem;
+    }
+
+    .gap-1x2-2 {
+        gap: 9.6rem;
+    }
+
+    .gap-1x2-3 {
+        gap: 6rem;
+    }
+
+    .gap-1x3 {
+        gap: 4rem;
+    }
+
+    .gap-1x4 {
+        gap: 7rem;
+    }
+
+    .grid--2x2 {
+        gap: 9rem;
+    }
+
     .grid--2x6 {
         grid-template-columns: repeat(2, 50fr);
         grid-template-rows: repeat(6, 50fr);
@@ -587,14 +674,23 @@ input[type="email"]:focus{
 }
 
 .section-feature {
-    padding: 4rem 2.5rem;
+    padding: 3.8rem 2.5rem;
 }
 
 .section-step {
-    padding: 4rem 2.5rem;
+    padding: 7.8rem 2.5rem;
 }
 
 .section-meal {
+    padding: 4rem 2.5rem;
+}
+
+.section-testimonial {
+    padding: 4rem 2.5rem;
+    background-color: var(--color-secondary);
+}
+
+.section-pricing {
     padding: 4rem 2.5rem;
 }
 
@@ -603,6 +699,18 @@ input[type="email"]:focus{
         padding: 2.4rem 8rem 6.4rem 8rem;
     }
     .section-step {
+        padding: 2.4rem 8rem 6.4rem 8rem;
+    }
+
+    .section-meal {
+        padding: 2.4rem 8rem 6.4rem 8rem;
+    }
+
+    .section-testimonial {
+        padding: 2.4rem 8rem 6.4rem 8rem;
+    }
+
+    .section-pricing {
         padding: 2.4rem 8rem 6.4rem 8rem;
     }
 }
