@@ -1,3 +1,5 @@
+@import url(normalize.css);
+
 :root {
     --color-gray: #6f6f6f;
     --color-heading: #333;
