@@ -1,4 +1,4 @@
-@import url(normalize.css);
+@import url(normalize.css   );
 
 :root {
     --color-gray: #6f6f6f;
@@ -500,7 +500,7 @@ nav button {
 
 .sponsor__logos img {
     filter: brightness(0);
-    opacity: 50%;
+    opacity: 0.5;
     height: 1.2rem;
     margin-right: 2rem;
 }
