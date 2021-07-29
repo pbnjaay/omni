@@ -544,14 +544,14 @@ nav button {
 .step__img::after {
     background-color: #fae5d3;
     width: 45%;
-    padding-top: 45%;
+    padding-bottom: 45%;
     z-index: 1;
 }
 
 .step__img::before {
     background-color: var(--color-secondary);
     width: 60%;
-    padding-top: 60%;
+    padding-bottom: 60%;
 }
 
 .step__img img {
