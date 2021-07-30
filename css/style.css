@@ -366,6 +366,16 @@ select {
     overflow: hidden;
 }
 
+.fixe .header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    background-color: rgba(255, 255, 255, 0.97);
+    box-shadow: 0 0.2rem 0.4rem rgb(0 0 0 / 4%);
+}
+
 .nav {
     display: flex;
     flex-wrap: wrap;
@@ -430,7 +440,8 @@ nav button {
 @media screen and (min-width: 1024px) {
     .header {
         overflow: visible;
-        padding: 3.5rem 7rem;
+        padding: 2.5rem 7rem;
+        transition: all 250ms ease;
     }
 
     .nav button {
@@ -824,25 +835,6 @@ aside p {
     row-gap: 5rem;
 }
 
-.acc {
-    grid-area: acc;
-}
-
-.comp {
-    grid-area: comp;
-}
-
-.ress {
-    grid-area: ress;
-}
-
-.omni {
-    grid-area: omni;
-}
-
-.conta {
-    grid-area: contact;
-}
 
 @media screen and (min-width: 1024px) {
     .grid--1x2 {
@@ -908,12 +900,6 @@ aside p {
 
     .align-self-end {
         align-self: flex-end;
-    }
-
-    .grid--footer {
-        grid-template-areas: none;
-        grid-template-columns: repeat(5, 50fr);
-        gap: 9rem;
     }
 }
 

@@ -1,4 +1,5 @@
 const collapsibles = document.querySelectorAll(".collapsible");
+
 collapsibles.forEach((item) =>
   item.addEventListener("click", function () {
     this.classList.toggle("collapsible--expanded");
@@ -8,4 +9,25 @@ collapsibles.forEach((item) =>
   })
 );
 
-console.log("working.....");
+const options = {
+  root: null,
+  rootMargin: "0px",
+  threshold: 0.2,
+};
+
+const callback = (entries) => {
+  const ent = entries[0];
+
+  if (ent.isIntersecting === false) {
+    document.body.classList.add("fixe");
+  }
+
+  if (ent.isIntersecting) {
+    document.body.classList.remove("fixe");
+  }
+};
+
+const observer = new IntersectionObserver(callback, options);
+
+const target = document.querySelector(".section-hero");
+observer.observe(target);
