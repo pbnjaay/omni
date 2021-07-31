@@ -29,7 +29,7 @@
     <script defer src="js/main.js"></script>
   </head>
   <body>
-    <header class="header container">
+    <header class="header">
       <nav class="nav collapsible">
         <a href="#" class="nav__logo">
           <img src="/img/omnifood-logo.png" alt="" />
@@ -45,16 +45,16 @@
             ></ion-icon>
           </button>
           <li class="list__item">
-            <a class="nav__link" href="#">How it works</a>
+            <a class="nav__link" href="#How">How it works</a>
           </li>
           <li class="list__item">
-            <a class="nav__link" href="#">Meals</a>
+            <a class="nav__link" href="#Meals">Meals</a>
           </li>
           <li class="list__item">
-            <a class="nav__link" href="#">Testimonials</a>
+            <a class="nav__link" href="#Testimonials">Testimonials</a>
           </li>
           <li class="list__item">
-            <a class="nav__link" href="#">Pricing</a>
+            <a class="nav__link" href="#Pricing">Pricing</a>
           </li>
           <li class="list__item">
             <a class="btn btn--nav nav__link" href="#">Try for free</a>
@@ -137,7 +137,7 @@
           </div>
         </div>
       </section>
-      <section class="section-step">
+      <section class="section-step" id="How">
         <span class="sub-heading">HOW IT WORKS</span>
         <h2>Your daily dose of health in 3 simple steps</h2>
         <div class="step grid grid--1x2 gap-1x2 grid-center-v container">
@@ -184,7 +184,7 @@
           </div>
         </div>
       </section>
-      <section class="section-meal">
+      <section class="section-meal" id="Meals">
         <div class="align-center">
           <span class="sub-heading">MEALS</span>
           <h2>Omnifood AI chooses from 5,000+ recipes</h2>
@@ -331,13 +331,8 @@
         </div>
       </section>
       <section
-        class="
-          grid grid--1x2
-          gap-1x2-2
-          grid-center-v
-          section-testimonial
-          container
-        "
+        class="grid grid--1x2 gap-1x2-2 grid-center-v section-testimonial"
+        id="Testimonials"
       >
         <div>
           <span class="sub-heading"> TESTIMONIALS </span>
@@ -432,7 +427,7 @@
           </div>
         </div>
       </section>
-      <section class="section-pricing">
+      <section class="section-pricing" id="Pricing">
         <div class="container">
           <span class="sub-heading">PRICING</span>
           <h2>Eating well without breaking the bank</h2>

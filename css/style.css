@@ -34,6 +34,7 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+      scroll-behavior:smooth;
 }
 
 .img-profile {
@@ -43,7 +44,7 @@ html {
 }
 
 .container {
-    max-width: 1200rem;
+    max-width: 120rem;
     margin: 0 auto;
 }
 
@@ -422,12 +423,23 @@ nav button {
     color: var(--color-heading);
     font-weight: 500;
     font-size: 2.4rem;
+    transition: var(--transition-btn);
+}
+
+.nav__link:hover {
+    color: var(--color-primary);
 }
 
 .btn--nav {
     padding: 0.5rem 2rem;
     background-color: var(--color-primary);
     border-radius: 9px;
+    color: #fff;
+    transition: var(--transition-btn);
+}
+
+.btn--nav:hover {
+    background-color: var(--darker-primary);
     color: #fff;
 }
 
